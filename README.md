@@ -66,6 +66,7 @@ Lottie Animations
 
 
 **Possible / Unknown Crashes**
+
 1.When trying to edit user's profile, sometimes the application crash, and sometimes, after editing , the app enters an infinite loop of animation 
  (but the edit data still saved), and when launching the app back, when try to edit profile again, it crushes.
 2. When signing in, location services must be open, otherwise it will take a long time to sign in successfully.
