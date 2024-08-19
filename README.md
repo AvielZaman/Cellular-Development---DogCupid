@@ -28,7 +28,7 @@ The users first sign up and then can easily log in again.
 1. Are you new in the app and haven't discover dogs yet ? Click on "Discover" button 
 and you gonna discover a lot of dogs around you!
 2. You can also click on "chats" button to open the the chats with the dog you liked or with dogs who liked you!
-3. Don't worry, you won't miss even on the likes you got! Our system notifies you when someone liked you ♥
+3. Afraid of missing new likes ? We got you! Our system notifies you in-app when someone likes you ♥
 
 
 ![image](https://github.com/user-attachments/assets/89d55dc9-9cc9-45fc-a6ed-9f19e866282f)                          ![image](https://github.com/user-attachments/assets/ece5667a-f987-4406-a9e5-5f421ba63cd1)
@@ -69,7 +69,7 @@ Lottie Animations
 
 
 
-**Possible / Unknown Crashes**
+**Possible / known Crashes**
 
 1. When trying to edit user's profile, sometimes the application crash, and sometimes, after editing , the app enters an infinite loop of animation 
  (but the edit data still saved), and when launching the app back, when try to edit profile again, it crushes.
@@ -77,6 +77,8 @@ Lottie Animations
 2. When signing in, location services must be open, otherwise it will take a long time to sign in successfully.
    
 3. The app uses internet, so WIFI is must (or cellular internet).
+   
+4. Users can't relogin via email (although they are  already exist in the database).
 
 
 
