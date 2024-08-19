@@ -60,9 +60,13 @@ They can also adjust their settings, notification preferences, and search filter
 **Technologies and Libraries Used**
 
 Firebase (Real-time database, Storage, Authentication)
+
 Glide
+
 Google Maps
+
 Lottie Animations
+
 
 
 **Possible / Unknown Crashes**
