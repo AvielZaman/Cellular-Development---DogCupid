@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">DogCupid</string>
+    <string name="facebook_application_id">2446878375702130</string>
+    <string name="fb_login_protocol_scheme">fb2446878375702130</string>
+    <string name="facebook_client_token">56789</string>
+    <string name="profile_text">Profile</string>
+    <string name="home_text">home</string>
+    <string name="settings_text">settings</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="like_BTN">Like</string>
+    <string name="pass_BTN">pass</string>
+</resources>

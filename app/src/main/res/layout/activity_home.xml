@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dogs"
+    tools:context=".HomeActivity">
+
+    <!-- Semi-transparent overlay to improve text visibility -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#50000000" /> <!-- Lighter overlay -->
+
+    <!-- header -->
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/home_header_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DogCupid"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/Header_size"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/header_margin" />
+
+    <!-- Hey text -->
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/home_name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hey "
+        android:layout_below="@id/home_header_text"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/name_text_size"
+        android:textColor="@color/white"
+        android:textStyle="normal"
+        android:layout_marginTop="@dimen/name_margin" />
+
+    <!-- Discover button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/home_Discover_BTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Discover"
+        android:layout_below="@id/home_name_text"
+        android:layout_marginTop="@dimen/name_margin"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/buttons_text_size"
+        android:backgroundTint="@color/deep_purple_300"
+        android:textColor="@color/white"
+        android:fontFamily="monospace"/>
+
+
+    <!-- Chats button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/home_Chats_BTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chats"
+        android:layout_below="@id/home_Discover_BTN"
+        android:layout_marginTop="@dimen/default_margin"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/buttons_text_size"
+        android:backgroundTint="@color/deep_purple_300"
+        android:textColor="@color/white"
+        android:fontFamily="monospace"/>
+
+
+    <!-- profile button -->
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/home_profile_BTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/profile_text"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="30dp"
+        android:backgroundTint="#E0E0E0"
+        android:layout_alignParentLeft="true"
+        app:icon="@drawable/profile"
+        app:iconGravity="textTop" />
+
+    <!-- settings button -->
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/home_settings_BTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/settings_text"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="30dp"
+        android:backgroundTint="@color/gray_300"
+        android:layout_alignParentRight="true"
+        app:icon="@drawable/settings"
+        app:iconGravity="textTop"/>
+
+</RelativeLayout>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dogs"
+    tools:context=".ProfileActivity">
+
+    <!-- Semi-transparent overlay for better readability -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000" />
+
+    <!-- Dog's image -->
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/profile_IMG_image"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="20dp"
+        android:scaleType="centerCrop"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <!-- Profile Details -->
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile_IMG_image"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:background="@android:color/white"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="80dp">
+
+        <!-- Dog's name -->
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/profile_LBL_dog_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dog's name :"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Dog's age -->
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/profile_LBL_age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dog's age :"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Dog's breed -->
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/profile_LBL_breed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dog's breed :"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Owner's name -->
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/profile_LBL_owner_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Owner's name :"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Owner's phone -->
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/profile_LBL_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Owner's phone :"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <!-- Edit Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/profile_Edit_BTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/deep_purple_300"
+        android:text="Edit profile"
+        android:layout_above="@+id/home_settings_BTN"
+        android:textSize="16sp"
+        android:fontFamily="monospace"/>
+
+    <!-- Home Button -->
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/home_profile_BTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#E0E0E0"
+        android:text="@string/home_text"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:icon="@drawable/home"
+        app:iconGravity="textTop" />
+
+    <!-- Settings Button -->
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/home_settings_BTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/gray_300"
+        android:text="@string/settings_text"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:icon="@drawable/settings"
+        app:iconGravity="textTop" />
+
+</RelativeLayout>
+
+
+
+

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dogs"
+    tools:context=".EditProfileActivity">
+
+    <!-- Back button -->
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/edit_profile_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="@dimen/default_margin"
+        android:backgroundTint="@color/deep_purple_300"
+        app:icon="@drawable/left_arrow" />
+
+    <!-- Profile Image -->
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/edit_profile_image"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        tools:srcCompat="@drawable/add_photo" />
+
+    <!-- Dog's Name -->
+    <EditText
+        android:id="@+id/edit_profile_dog_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Type your dog's name here:"
+        android:textColor="@color/black"
+        android:layout_below="@id/edit_profile_image"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:background="@color/white"
+        android:textSize="18sp"
+        android:inputType="textPersonName|textCapWords"
+        android:padding="12dp"/>
+
+    <!-- Dog's Age -->
+    <EditText
+        android:id="@+id/edit_profile_dog_age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Type your dog's age here:"
+        android:textColor="@color/black"
+        android:layout_below="@id/edit_profile_dog_name"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:background="@color/white"
+        android:textSize="18sp"
+        android:inputType="textPersonName|textCapWords"
+        android:padding="12dp"/>
+
+    <!-- Dog's Breed -->
+    <EditText
+        android:id="@+id/edit_profile_dog_breed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Type your dog's breed here:"
+        android:textColor="@color/black"
+        android:layout_below="@id/edit_profile_dog_age"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:background="@color/white"
+        android:textSize="18sp"
+        android:inputType="textPersonName|textCapWords"
+        android:padding="12dp"/>
+</RelativeLayout>

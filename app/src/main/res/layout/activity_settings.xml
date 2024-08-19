@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dogs"
+    tools:context=".SettingsActivity">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/settings_LBL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SETTINGS"
+        android:textSize="@dimen/Header_size"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="150dp"/>
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/settings_pushNotification_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PUSH NOTIFICATION"
+        android:textColor="@color/white"
+        android:checked="false"
+        android:textOff="Enable"
+        android:textOn="Disable"
+        app:showText="true"
+        app:switchTextAppearance="@style/SwitchTextAppearance"
+        app:thumbTint="@color/white"
+        android:scaleX="2"
+        android:scaleY="2"
+        app:switchPadding="8dp"
+        android:layout_marginTop="270dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="casual"
+        />
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/settings_sound_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SOUND"
+        android:textColor="@color/white"
+        android:checked="false"
+        android:textOff="Enable"
+        android:textOn="Disable"
+        app:showText="true"
+        app:switchTextAppearance="@style/SwitchTextAppearance"
+        app:thumbTint="@color/white"
+        android:scaleX="2"
+        android:scaleY="2"
+        app:switchPadding="91dp"
+        android:layout_below="@+id/settings_pushNotification_switch"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="casual"/>
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/settings_Vibrate_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VIBRATE"
+        android:textColor="@color/white"
+        android:checked="false"
+        android:textOff="Enable"
+        android:textOn="Disable"
+        app:showText="true"
+        app:switchTextAppearance="@style/SwitchTextAppearance"
+        app:thumbTint="@color/white"
+        android:scaleX="2"
+        android:scaleY="2"
+        app:switchPadding="@dimen/vibrate_padding_switch"
+        android:layout_below="@+id/settings_sound_switch"
+        android:layout_marginTop="30dp"
+        android:layout_centerInParent="true"
+        android:fontFamily="casual"/>
+
+    <!-- profile button -->
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/settings_profile_BTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/profile_text"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="30dp"
+        android:backgroundTint="#E0E0E0"
+        android:layout_alignParentLeft="true"
+        app:icon="@drawable/profile"
+        app:iconGravity="textTop" />
+
+    <!-- home button -->
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/settings_home_BTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/home_text"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="30dp"
+        android:backgroundTint="@color/gray_300"
+        android:layout_alignParentRight="true"
+        app:icon="@drawable/home"
+        app:iconGravity="textTop"/>
+
+    <!-- Logout button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/settings_logout_BTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOGOUT"
+        android:layout_gravity="center"
+        android:layout_below="@+id/settings_Vibrate_switch"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/name_text_size"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@color/deep_purple_300"
+        android:fontFamily="monospace"/>
+</RelativeLayout>

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context=".CollectUserInfoActivity">
+
+            <!-- Welcome Text -->
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/new_user_welcome_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome ! Let's get started !"
+                android:textSize="@dimen/name_text_size"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="80dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:maxLines="1"
+                android:ellipsize="end" />
+
+            <!-- User Image -->
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/new_user_image"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                tools:srcCompat="@drawable/add_photo"
+                android:layout_below="@+id/new_user_welcome_text"/>
+
+            <!-- Dog's Name -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_dog_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/new_user_image"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                app:hintTextColor="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/new_user_dog_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Type your dog's name here:"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Dog's Age -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_dog_age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/til_dog_name"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                app:hintTextColor="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/new_user_dog_age"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Type your dog's age here:"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Dog's Breed -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_dog_breed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/til_dog_age"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                app:hintTextColor="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/new_user_dog_breed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Type your dog's breed here:"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Dog's Description -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_dog_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/til_dog_breed"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                app:hintTextColor="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/new_user_dog_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Type description here:"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Dog's Gender -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_dog_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/til_dog_description"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                app:hintTextColor="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/new_user_dog_gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Type your dog's gender here:"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Owner's Name -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_owner_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/til_dog_gender"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                app:hintTextColor="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/new_user_owner_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Type your name here:"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Owner's Phone -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_owner_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/til_owner_name"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                app:hintTextColor="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/new_user_owner_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Type your phone here:"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Continue Button -->
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:id="@+id/new_user_continue_BTN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="@dimen/default_margin"
+                android:backgroundTint="@color/deep_purple_300"
+                app:icon="@drawable/right_arrow"
+                android:layout_below="@id/til_owner_phone"/>
+        </RelativeLayout>
+    </ScrollView>
+
+    <!-- Scroll Down Arrow -->
+    <ImageView
+        android:id="@+id/scroll_down_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="80dp"
+        android:src="@drawable/ic_scroll_down_arrow"
+        android:visibility="visible"/>
+</FrameLayout>

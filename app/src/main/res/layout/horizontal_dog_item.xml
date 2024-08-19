@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="@dimen/poster_width"
+        android:layout_height="@dimen/poster_height"
+        android:elevation="@dimen/poster_elevation"
+        app:cardElevation="@dimen/poster_elevation"
+        app:cardCornerRadius="@dimen/poster_corner_radius"
+        android:layout_marginVertical="@dimen/poster_vertical_margin"
+        android:layout_marginStart="@dimen/poster_vertical_margin"
+        app:layout_constraintEnd_toStartOf="@id/dog_CARD_data"
+        app:layout_constraintStart_toStartOf="@id/dog_CARD_data"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"        >
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/dog_IMG_poster"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="center"
+            tools:src="@drawable/splash_gradient_background" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/dog_CARD_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/data_start_margin"
+        android:layout_marginEnd="@dimen/data_end_margin"
+        android:layout_marginVertical="@dimen/data_end_margin"
+        android:elevation="@dimen/data_elevation"
+        app:cardCornerRadius="@dimen/poster_corner_radius"
+        app:cardElevation="@dimen/data_elevation"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/data_end_margin"
+            android:layout_marginStart="@dimen/data_start_margin">
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/dog_LBL_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="@dimen/data_end_margin"
+                android:layout_marginTop="@dimen/data_end_margin"
+                android:layout_marginEnd="@dimen/data_end_margin"
+                android:maxLines="2"
+                android:minLines="2"
+                android:textSize="@dimen/dog_name_size"
+                android:textStyle="bold"
+                tools:text="Name :" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/dog_LBL_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/dog_LBL_name"
+                android:layout_alignStart="@id/dog_LBL_name"
+                android:layout_marginEnd="@dimen/data_end_margin"
+                android:maxLines="1"
+                android:minLines="1"
+                android:textSize="@dimen/data_text_size"
+                tools:text="Age :" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/dog_LBL_breed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/dog_LBL_age"
+                android:layout_alignStart="@id/dog_LBL_name"
+                android:layout_marginTop="@dimen/data_end_margin"
+                android:maxLines="1"
+                android:minLines="1"
+                android:textSize="@dimen/data_text_size"
+                tools:text="Breed :" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/dog_LBL_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/dog_LBL_breed"
+                android:layout_alignStart="@id/dog_LBL_name"
+                android:layout_marginTop="@dimen/data_end_margin"
+                android:layout_marginEnd="@dimen/data_end_margin"
+                android:maxLines="4"
+                android:minLines="1"
+                android:textSize="@dimen/data_text_size"
+                tools:text="Some description : Loves to do walks in the morning, loves to play with his kitten." />
+
+            <!-- Location button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/dog_location_BTN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tap to see location"
+                android:layout_below="@id/dog_LBL_description"
+                android:layout_marginTop="@dimen/default_margin"
+                android:layout_centerHorizontal="true"
+                android:textSize="15sp"
+                android:backgroundTint="@color/deep_purple_300"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

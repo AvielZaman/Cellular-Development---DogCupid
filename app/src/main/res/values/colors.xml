@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="gray_300">#E0E0E0</color>
+    <color name="deep_purple_300">#9575CD</color>
+    <color name="red_300">#E57373</color>
+    <color name="green_300">#81C784</color>
+    <color name="yellow_100">#FFF9C4</color>
+    <color name="pink_100">#F8BBD0</color>
+    <color name="chatBackground">#ECE5DD</color>
+    <color name="toolBarBackground">#075E54</color>
+</resources>
